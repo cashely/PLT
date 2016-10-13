@@ -70,19 +70,19 @@ a {
   margin-right: 3px;
   display: block;
   padding: 4px 0;
-  background: url(../images/qqspace.png) center center no-repeat;
+  background: url(images/qqspace.png) center center no-repeat;
 }
 .topbar-right .sina {
-  background: url(../images/sina.png) center center no-repeat;
+  background: url(images/sina.png) center center no-repeat;
 }
 .topbar-right .weibo {
-  background: url(../images/weibo.png) center center no-repeat;
+  background: url(images/weibo.png) center center no-repeat;
 }
 .topbar-right .renren {
-  background: url(../images/renren.png) center center no-repeat;
+  background: url(images/renren.png) center center no-repeat;
 }
 .topbar-right .add {
-  background: url(../images/add.png) center center no-repeat;
+  background: url(images/add.png) center center no-repeat;
 }
 /****header*****/
 .header {
@@ -95,7 +95,7 @@ a {
   float: left;
   width: 288px;
   height: 100%;
-  background: url(../images/logo.png) center center no-repeat;
+  background: url(images/logo.png) center center no-repeat;
 }
 .header .nav li {
   float: left;
@@ -136,7 +136,7 @@ a {
   height: 15px;
   top: 5px;
   left: 5px;
-  background: url("../images/search.png") no-repeat;
+  background: url("images/search.png") no-repeat;
   z-index: 3;
 }
 .header .nav .search {
