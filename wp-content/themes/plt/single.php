@@ -10,7 +10,7 @@
         <h3 class="text-title"><?php the_title(); ?></h3>
         <span class="line"></span>
         <div class="document-content">
-            <div class="time">
+            <div class="release-time">
                 发布日期：<?php the_time('Y年m月d日'); ?>
             </div>
             <div>

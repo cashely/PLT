@@ -45,8 +45,8 @@
 				}
 			?>
 			</div>
-            <form id="docSearch" action="">
-                <input type="text" class="search" placeholder="请输入关链词"/>
+            <form id="docSearch" role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                <input type="search" value="<?php echo get_search_query(); ?>" name="s"  class="search" placeholder="请输入关链词"/>
             </form>
         </div>
     </div>
