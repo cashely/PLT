@@ -1,42 +1,6 @@
 <?php
 	get_header();
 ?>
-<!--topbar -->
-    <div class="topbar">
-        <div class="topbar-box">
-            <div class="topbar-left">
-                <a href="javascript:void(0);">首页</a>
-                <span>|</span>
-                <a href="location.html">
-                    网站地图
-                </a>
-            </div>
-            <div class="topbar-right">
-                分享到：
-                <a class="add" href="javascript:void(0);"></a>
-                <a class="renren" href="javascript:void(0);"></a>
-                <a class="weibo" href="javascript:void(0);"></a>
-                <a class="sina" href="javascript:void(0);"></a>
-                <a class="qqspace" href="javascript:void(0);"></a>
-            </div>
-        </div>
-    </div>
-<!--header -->
-    <div class="header">
-        <a href="#" class="logo"></a>
-        <div class="nav">
-        	<div class="menu-menu-1-container">
-            <?php
-				if(function_exists('wp_nav_menu')) {
-					wp_nav_menu(array('theme_location'=>'primary'));
-				}
-			?>
-			</div>
-            <form id="docSearch" action="">
-                <input type="text" class="search" placeholder="请输入关链词"/>
-            </form>
-        </div>
-    </div>
 <!--banner -->
     <div class="banner">
         <img src="<?php bloginfo('template_url'); ?>/images/banner.jpg" alt=""/>
@@ -159,53 +123,13 @@
 						    'category_before'  => '<li id=%id class=%class>',
 						    'category_after'   => '</li>' 
 						);
-                		wp_list_bookmarks( $args ); 
+                		wp_list_bookmarks($args); 
                 	?>
-                    <a href="javascript:void(0);"><img src="images/friendlink01.jpg" alt=""></a>
-                    <a href="javascript:void(0);"><img src="images/friendlink02.jpg" alt=""></a>
-                    <a href="javascript:void(0);"><img src="images/friendlink03.jpg" alt=""></a>
-                    <a href="javascript:void(0);"><img src="images/friendlink04.jpg" alt=""></a>
-                    <a href="javascript:void(0);"><img src="images/friendlink05.jpg" alt=""></a>
-                    <a href="javascript:void(0);"><img src="images/friendlink06.jpg" alt=""></a>
-                    <a href="javascript:void(0);"><img src="images/friendlink07.jpg" alt=""></a>
-                    <a href="javascript:void(0);"><img src="images/friendlink08.jpg" alt=""></a>
+                    <?php wp_list_bookmarks('title_li=&show_images=1'); ?>
                     <span class="justify_fix"></span>
                 </div>
             </div>
         </div>
-        <!--icon -->
-        <div class="icon">
-            <a href="javascript:void(0);"><img src="images/contact.png" alt=""></a>
-            <a href="javascript:void(0);"><img src="images/top.png" alt=""></a>
-        </div>
-    </div>
-<!--footer -->
-    <div class="footer">
-        <div class="footer-box">
-            <div class="links">
-                <a href="#">首页</a>
-                <span>|</span>
-                <a href="#">中心简介</a>
-                <span>|</span>
-                <a href="#">通知公告</a>
-                <span>|</span>
-                <a href="#">培训项目</a>
-                <span>|</span>
-                <a href="#">报名入口</a>
-                <span>|</span>
-                <a href="#">知识库</a>
-                <span>|</span>
-                <a href="#">表格下载</a>
-                <span>|</span>
-                <a href="#">网上培训</a>
-            </div>
-            <p>
-                <span>版权所有 <a href="javascript:void(0);">广东顺德食品药品教育服务网</a></span>
-                <span class="location">地址：<a href="javascript:void(0);">广东省顺德市石岛管理区黄海中路218号</a></span>
-                <span> 粤ICP备06028705</span>
-            </p>
-        </div>
-    </div>
 <?php
 	get_footer();
 ?>
