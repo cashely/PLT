@@ -12,10 +12,10 @@
                 <img u="image" src="<?php bloginfo('template_url'); ?>/images/banner.jpg" />
             </div>
             <div>
-                <img u="image" src="<?php bloginfo('template_url'); ?>/images/banner.jpg" />
+                <img u="image" src="<?php bloginfo('template_url'); ?>/images/banner02.jpg" />
             </div>
             <div>
-                <img u="image" src="<?php bloginfo('template_url'); ?>/images/banner.jpg" />
+                <img u="image" src="<?php bloginfo('template_url'); ?>/images/banner03.jpg" />
             </div>
         </div>
         <!-- bullet navigator container -->

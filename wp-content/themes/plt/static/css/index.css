@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 14px;
-  font-family: "Microsoft Yahei", Arial;
+  font-family: Regular, Helvetica, "Microsoft Yahei", Arial;
   text-align: center;
   min-width: 1080px;
 }
@@ -38,6 +38,71 @@ img {
 a {
   text-decoration: none;
   color: black;
+}
+.of-hide {
+  overflow: hidden;
+}
+.title {
+  font-size: 18px;
+  font-weight: 200;
+  display: inline-block;
+  padding: 8px 16px;
+  margin-left: 5px;
+  background: #f8f8f8;
+  border-bottom: 4px solid #c40808;
+  box-shadow: 0 5px 5px 0 #c9c9c9;
+}
+.line {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 100%;
+  border: 1px solid #f1f1f1;
+  top: -3px;
+  left: 0;
+  z-index: -1;
+}
+.md-content {
+  margin-top: 30px;
+  padding-left: 20px ;
+  height: 100%;
+}
+.md-content-list {
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+.md-content-list a {
+  display: block;
+}
+.md-content-list span {
+  display: block;
+  height: 22px;
+}
+.md-content-list .list-title {
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+}
+.md-content-list .list-title span {
+  display: inline;
+  font-size: 12px;
+  color: #ff0000;
+  margin-right: 5px;
+  padding: 1px 3px;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  vertical-align: 1px;
+}
+.more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #c40808;
+  cursor: pointer;
+}
+.mg-top {
+  margin-top: 20px;
 }
 /****topbar*****/
 .topbar {
@@ -116,6 +181,7 @@ a {
   display: inline-block;
   width: 110px;
   height: 26px;
+  font-size: 12px;
   position: relative;
   line-height: 26px;
   margin: 28px 0 0 12px;
@@ -167,71 +233,6 @@ a {
   position: relative;
   padding: 35px 0 15px 0;
   text-align: left;
-}
-.content .of-hide {
-  overflow: hidden;
-}
-.content .title {
-  font-size: 18px;
-  font-weight: 200;
-  display: inline-block;
-  padding: 8px 16px;
-  margin-left: 5px;
-  background: #f8f8f8;
-  border-bottom: 4px solid #c40808;
-  box-shadow: 0 5px 5px 0 #c9c9c9;
-}
-.content .line {
-  position: relative;
-  display: inline-block;
-  float: left;
-  width: 100%;
-  border: 1px solid #f1f1f1;
-  top: -3px;
-  left: 0;
-  z-index: -1;
-}
-.content .md-content {
-  margin-top: 30px;
-  padding-left: 20px ;
-  height: 100%;
-}
-.content .md-content-list {
-  display: block;
-  cursor: pointer;
-  position: relative;
-}
-.content .md-content-list a {
-  display: block;
-}
-.content .md-content-list span {
-  display: block;
-  height: 22px;
-}
-.content .md-content-list .list-title {
-  font-size: 16px;
-  height: 30px;
-  line-height: 30px;
-}
-.content .md-content-list .list-title span {
-  display: inline;
-  font-size: 12px;
-  color: #ff0000;
-  margin-right: 5px;
-  padding: 1px 3px;
-  border: 1px solid #ff0000;
-  border-radius: 5px;
-  vertical-align: 1px;
-}
-.content .more {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  color: #c40808;
-  cursor: pointer;
-}
-.content .mg-top {
-  margin-top: 20px;
 }
 .row-list {
   letter-spacing: 1px;
@@ -453,6 +454,11 @@ a {
 .notice .md-content .notice-title span {
   padding: 0 8px 0 5px;
 }
+.notice .md-content .notice-title a {
+  float: right;
+  color: #fff;
+  font-size: 14px;
+}
 .notice .md-content .notice-list {
   margin-top: 25px;
   overflow: hidden;
@@ -469,7 +475,6 @@ a {
   color: #ededed;
 }
 .notice .md-content .notice-list .list-rt .row-list {
-  margin-top: 28px;
   width: 100%;
 }
 .notice .md-content .notice-list .list-rt .row-list .time {
@@ -482,9 +487,52 @@ a {
 }
 /****login*****/
 .login form {
-  width: 725px;
-  margin: 70px  auto 0 auto;
+  width: 600px;
+  margin: 40px  auto 30px auto;
   font-size: 16px;
+}
+.login form p {
+  margin-top: 20px;
+}
+.login form label {
+  font-weight: bold;
+}
+.login form label select {
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.login form input {
+  width: 100%;
+  padding: 8px 0;
+  line-height: 18px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.login form .wpcf7-submit {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  color: white;
+  background-color: #5cb85c;
+  width: 100%;
+}
+.login form .wpcf7-textarea {
+  margin-top: 10px;
+  width: 100%;
 }
 .login form h3 {
   font-size: 16px;
@@ -559,6 +607,44 @@ a {
 .online-learning .md-content {
   padding-left: 10px;
 }
+/****table*****/
+.paging-package {
+  overflow: hidden;
+  margin: 10px 0;
+}
+.paging {
+  width: 270px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.paging li {
+  float: left;
+  padding: 6px 12px;
+  margin-right: -1px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.paging li:hover {
+  background-color: #428bca;
+}
+.paging li:hover a {
+  color: #fff;
+}
+.paging li:first-child {
+  padding: 6px 20px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.paging li:last-child {
+  padding: 6px 20px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.paging a {
+  color: #428bca;
+  text-decoration: none;
+}
 /****document*****/
 .text-title {
   line-height: 38px;
@@ -589,6 +675,74 @@ a {
 .video-content .video-plugIn {
   margin-top: 30px;
   text-align: center;
+}
+/****404*****/
+.notFound {
+  padding-top: 105px;
+  overflow: hidden;
+  font-family: Regular;
+  font-size: 18px;
+}
+.notFound h3 {
+  margin-top: 30px;
+  font-size: 30px;
+}
+.notFound p {
+  margin-top: 12px;
+}
+.notFound .btn {
+  display: inline-block;
+  color: #fff;
+  margin-top: 25px;
+  padding: 10px 25px;
+  background-color: #ff9500;
+}
+/****results*****/
+.results_list {
+  margin-bottom: 45px;
+  overflow: hidden;
+  display: block;
+}
+.media-left {
+  float: left;
+  padding: 0;
+  text-align: center;
+  border-bottom: 9px solid #c40808;
+}
+.media-left h4 {
+  color: #c40808;
+  font-size: 18px;
+  font-weight: 200;
+}
+.media-left .day {
+  height: 35px;
+  line-height: 45px;
+  margin-top: 13px;
+  margin-bottom: 3px;
+  font-size: 16px;
+  color: #c40808;
+  background: url(../images/bg_day.png) no-repeat center;
+}
+.media-left .wrap {
+  padding: 8px 16px;
+  border-bottom: 1px solid #e7a8a8;
+}
+.media-text {
+  margin-left: 10px;
+  width: 850px;
+  float: left;
+  padding-top: 5px;
+}
+.media-text h3 {
+  color: #c40808;
+  font-weight: 200;
+  font-size: 18px;
+}
+.media-text p {
+  text-indent: 32px;
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1.5em;
 }
 .jssorb21 {
   position: absolute;

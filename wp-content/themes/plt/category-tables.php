@@ -3,7 +3,7 @@
 ?>
 <!--banner -->
     <div class="banner">
-        <img src="images/banner.jpg" alt="">
+        <img src="<?php bloginfo('template_url'); ?>/images/banner-table.jpg" alt="">
     </div>
 <!--content -->
     <div class="content">
