@@ -3,7 +3,7 @@
 ?>
 <!--banner -->
     <div class="banner">
-        <img src="images/banner01.jpg" alt="">
+        <img src="images/bg_online.jpg" alt="">
     </div>
 <!--content -->
     <div class="content">

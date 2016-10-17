@@ -141,6 +141,7 @@
         </div>
         <div class="news row">
             <h3 class="title">中心新闻</h3>
+            <a class="more" href="javascript:void(0);">查看更多>></a>
             <span class="line"></span>
             <div  class="md-content">
             	<?php query_posts('showposts=4&cat=3'); ?>
