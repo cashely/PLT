@@ -23,12 +23,7 @@
                 </div>
             </a>
          <?php endwhile; ?>
-        <!--icon -->
-        <div class="icon">
-            <a href="javascript:void(0);"><img src="images/contact.png" alt=""></a>
-            <a href="javascript:void(0);"><img src="images/top.png" alt=""></a>
-        </div>
-    </div>
+         <div class="page_navi"><?php par_pagenavi(4); ?></div>
 <?php
 	get_footer();
 ?>

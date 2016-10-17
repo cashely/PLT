@@ -14,7 +14,7 @@
              	 <?php query_posts('showposts=4&cat=5'); ?>
                      <?php while (have_posts()) : the_post(); ?>
                          <div class="md-content-list">
-                             <div class="list-main">
+                             <a href="<?php the_permalink();?>" class="list-main">
                              <?php if ( has_post_thumbnail() ) { ?>
                                 <?php the_post_thumbnail('indexNews'); ?>
                              	<?php } else {?>
@@ -22,9 +22,8 @@
                              	<?php } ?>
                                  <p>
                                     <?php echo wp_trim_words(get_the_title(),20); ?>
-                                    <a class="more">more>></a>
                                  </p>
-                             </div>
+                             </a>
                          </div>
             <?php endwhile; wp_reset_query(); ?>
         </div>

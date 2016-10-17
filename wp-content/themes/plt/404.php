@@ -10,6 +10,6 @@
     <img src="<?php bloginfo('template_url'); ?>/images/404.jpg" alt="">
     <h3>哎呀亲...你访问的页面出错了！</h3>
     <p>你输入的网址有误或者链接已经过期。</p>
-    <a class="btn" href="javascript:void(0);">返回首页</a>
+    <a class="btn" href="/">返回首页</a>
 </body>
 </html>
