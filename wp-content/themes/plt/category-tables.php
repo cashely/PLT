@@ -16,6 +16,7 @@
                 		<a href="<?php the_permalink(); ?>"><i>></i><?php the_title(); ?><span><?php the_time('Y-m-d')?></span></a>
                 <?php endwhile; ?>
                 </div>
+                <div class="page_navi"><?php par_pagenavi(4); ?></div>
             </div>
         </div>
 <?php

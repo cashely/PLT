@@ -35,4 +35,17 @@
 		next_posts_link(' 下一页 ');
 	    if($paged != $max_page){echo "<a href='" . get_pagenum_link($max_page) . "' class='extend' title='跳转到最后一页'> 最后一页 </a>";}}
 	}
+
+	//去除链接中的archives
+	add_filter('date_rewrite_rules', 'remove_date_permalink_prefix'); 
+	function remove_date_permalink_prefix($rules) { 
+		return array_combine( array_map('_rdpp_replace', array_keys($rules)) , array_values($rules) ); 
+	} 
+
+	foreach ( array( 'year_link', 'month_link', 'day_link') as $filter ) 
+		add_filter( $filter, '_rdpp_replace' ); 
+
+	function _rdpp_replace($s) { 
+		return str_replace('archives/date/', 'date/', $s); 
+	}
 ?>

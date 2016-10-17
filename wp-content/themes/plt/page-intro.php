@@ -7,9 +7,9 @@
 </div>
 <!--content -->
 <div class="location">
-    <span><img src="images/car.jpg" alt="">乘车路线：6路,9路,12路</span>
-    <span><img src="images/iphone.jpg" alt="">联系电话：400-00-00</span>
-    <span><img src="images/location.jpg" alt="">地址：顺德某某区某某路某号</span>
+    <span><img src="<?php bloginfo('template_url');?>/images/car.jpg" alt="">乘车路线：6路,9路,12路</span>
+    <span><img src="<?php bloginfo('template_url');?>/images/iphone.jpg" alt="">联系电话：400-00-00</span>
+    <span><img src="<?php bloginfo('template_url');?>/images/location.jpg" alt="">地址：顺德某某区某某路某号</span>
     <div id="allmap"></div>
     <script src="http://api.map.baidu.com/api?v=2.0&ak=XKZWFQtDs6DxGne8RebPZjibGyNY3cgY"></script>
     <script type="text/javascript">

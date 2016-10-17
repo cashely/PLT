@@ -1,0 +1,23 @@
+UPDATE wp_links t
+SET t.link_image = REPLACE(t.link_image, '192.168.1.81', '58.248.64.68');
+
+
+UPDATE wp_options t
+SET t.option_value = REPLACE(t.option_value, '192.168.1.81', '58.248.64.68');
+
+
+UPDATE wp_postmeta t
+SET t.meta_value = REPLACE(t.meta_value, '192.168.1.81', '58.248.64.68');
+
+
+UPDATE wp_posts t
+SET t.post_content = REPLACE(t.post_content, '192.168.1.81', '58.248.64.68');
+
+UPDATE wp_posts t
+SET t.post_content = REPLACE(t.post_content, 'localhost', '58.248.64.68');
+
+UPDATE wp_posts t
+SET t.guid = REPLACE(t.guid, '192.168.1.81', '58.248.64.68');
+
+UPDATE wp_posts t
+SET t.guid = REPLACE(t.guid, 'localhost', '58.248.64.68');

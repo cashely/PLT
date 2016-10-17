@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!--banner -->
     <div class="banner">
-        <img src="images/banner-table.jpg" alt="">
+        <img src="<?php bloginfo('template_url');?>/images/banner-table.jpg" alt="">
     </div>
 <!--content -->
     <div class="content">
@@ -15,16 +15,6 @@
                 <?php endwhile; ?>
                 </div>
             </div>
-            <div class="paging-package">
-                <ul class="paging">
-                    <li><a href="#">&laquo;</a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">&raquo;</a></li>
-                </ul>
-            </div>
+            <div class="page_navi"><?php par_pagenavi(4); ?></div>
         </div>
 <?php get_footer(); ?>

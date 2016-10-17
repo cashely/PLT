@@ -21,5 +21,20 @@
             </p>
         </div>
     </div>
+    <script type='text/javascript'>
+        (function(m, ei, q, i, a, j, s) {
+            m[a] = m[a] || function() {
+                (m[a].a = m[a].a || []).push(arguments)
+            };
+            j = ei.createElement(q),
+                s = ei.getElementsByTagName(q)[0];
+            j.async = true;
+            j.charset = 'UTF-8';
+            j.src = i + '?v=' + new Date().getUTCDate();
+            s.parentNode.insertBefore(j, s);
+        })(window, document, 'script', '//static.meiqia.com/dist/meiqia.js', '_MEIQIA');
+        _MEIQIA('entId', 25898);
+    </script>
+	<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 	</body>
 </html>
