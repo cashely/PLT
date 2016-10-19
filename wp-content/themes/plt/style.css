@@ -226,7 +226,7 @@ a {
 }
 .row-list i {
   padding-right: 3px;
-  color: #c40808;
+  color: #e0e0e0;
   font-size: 13px;
   font-style: initial;
 }
@@ -234,11 +234,20 @@ a {
   display: block;
   line-height: 30px;
   margin-bottom: 9px;
-  border-bottom: 1px solid #f8f8f8;
+  border-bottom: 1px solid #e0e0e0;
+}
+.row-list a:hover {
+  color: #c40808;
+}
+.row-list a:hover span {
+  color: #c40808;
+}
+.row-list a:hover i {
+  color: #c40808;
 }
 .row-list span {
   float: right;
-  color: #c40808;
+  color: #b1b1b1;
   font-size: 12px;
 }
 /****icon*****/
@@ -272,31 +281,31 @@ a {
 .md-notice .more {
   right: 10px;
 }
-.project {
+.lately-project {
   height: 416px;
   width: 33.33%;
   position: relative;
   overflow: hidden;
 }
-.project .title {
+.lately-project .title {
   margin-left: 20px;
 }
-.project .md-content {
+.lately-project .md-content {
   padding-right: 19px;
   border-right: 1px solid #e5e5e5 ;
 }
-.project .md-content .more {
+.lately-project .md-content .more {
   right: 10px;
 }
-.project .md-content-list {
+.lately-project .md-content-list {
   width: 292px;
 }
-.project .md-content-list a {
+.lately-project .md-content-list a {
   overflow: hidden;
   height: auto;
   margin-bottom: 22px;
 }
-.project p {
+.lately-project p {
   float: right;
   width: 206px;
   margin: 11px 0 0 6px;
@@ -757,6 +766,77 @@ a {
   margin-top: 15px;
   font-size: 16px;
   line-height: 1.5em;
+}
+/****project*****/
+.project {
+  padding: 25px 0;
+}
+.title span {
+  position: relative;
+  padding-right: 5px;
+  margin-right: 5px;
+  border-right: 1px solid #cbcbcb;
+}
+.title span:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent transparent transparent #cbcbcb;
+  right: -9px;
+  top: 7px;
+}
+.title-more {
+  position: absolute;
+  top: 13px;
+  padding: 3px 3px;
+  background: #c40808;
+  color: #fff;
+  border-radius: 3px;
+  right: 0;
+}
+.project-drug {
+  position: relative;
+}
+.project-drug .drug-content {
+  overflow: hidden;
+  margin-top: 30px;
+}
+.project-drug .row-list {
+  float: left;
+  width: 508px;
+  padding-right: 15px;
+}
+.project-drug .img {
+  width: 477px;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #e0e0e0;
+  float: right;
+}
+.project-food {
+  margin-top: 65px;
+  position: relative;
+}
+.project-food .md-content {
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 35px;
+}
+.project-food .row .md-content .md-content-list h4 {
+  line-height: 35px;
+}
+.project-food .md-content .md-content-list p .more {
+  display: inline;
+  height: auto;
+  line-height: initial;
+  padding: 1px 2px;
+  background-color: #c40808;
+  color: #fff;
+  bottom: 5px;
 }
 .jssorb21 {
   position: absolute;

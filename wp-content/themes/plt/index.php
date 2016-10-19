@@ -99,7 +99,7 @@
                     <a class="more">more>></a>
                 </div>
             </div>
-            <div class="lf project">
+            <div class="lf lately-project">
                 <h3 class="title">近期培训项目</h3>
                 <div  class="md-content">
                     <div class="md-content-list">
@@ -146,7 +146,6 @@
             <div  class="md-content">
             	<?php query_posts('showposts=4&cat=3'); ?>
                 	<?php while (have_posts()) : the_post(); ?>
-
 						<div class="md-content-list">
 		                    <h4><?php echo wp_trim_words(get_the_title(),13); ?></h4>
 		                   <div class="list-main">

@@ -8,68 +8,91 @@
 </head>
 <body>
 <!--topbar -->
-    <div class="topbar">
-        <div class="topbar-box">
-            <div class="topbar-left">
-                <a href="index.html">首页</a>
-                <span>|</span>
-                <a href="javascript:void(0);">
-                    网站地图
-                </a>
-            </div>
-            <div class="topbar-right">
-                分享到：
-                <a class="add" href="javascript:void(0);"></a>
-                <a class="renren" href="javascript:void(0);"></a>
-                <a class="weibo" href="javascript:void(0);"></a>
-                <a class="sina" href="javascript:void(0);"></a>
-                <a class="qqspace" href="javascript:void(0);"></a>
-            </div>
-        </div>
-    </div>
-<!--header -->
-    <div class="header">
-        <a href="#" class="logo"></a>
-        <div class="nav">
+<div class="topbar">
+    <div class="topbar-box">
+        <div class="topbar-left">
             <a href="javascript:void(0);">首页</a>
-            <a href="javascript:void(0);">中心简介</a>
-            <a href="javascript:void(0);">通知公告</a>
-            <a href="javascript:void(0);">培训项目</a>
-            <a href="javascript:void(0);">报名入口</a>
-            <a href="javascript:void(0);">知识库</a>
-            <a href="javascript:void(0);">表格下载</a>
-            <a href="javascript:void(0);">网上培训</a>
-            <form id="docSearch" action="">
-                <input type="text" class="search" placeholder="请输入关链词"/>
-            </form>
+            <span>|</span>
+            <a href="location.html">
+                网站地图
+            </a>
+        </div>
+        <div class="topbar-right">
+            分享到：
+            <a class="add" href="javascript:void(0);"></a>
+            <a class="renren" href="javascript:void(0);"></a>
+            <a class="weibo" href="javascript:void(0);"></a>
+            <a class="sina" href="javascript:void(0);"></a>
+            <a class="qqspace" href="javascript:void(0);"></a>
         </div>
     </div>
-<!--banner -->
-    <div class="banner">
-        <img src="images/banner-notice.jpg" alt="">
+</div>
+<!--header -->
+<div class="header">
+    <a href="#" class="logo"></a>
+    <div class="nav">
+        <div class="menu-menu-1-container">
+            <ul id="menu-menu-1" class="memu">
+                <li class="current-menu-item">
+                    <a href="http://192.168.1.81:8888">首页</a>
+                </li>
+                <li>
+                    <a href="http://192.168.1.81:8888">中心简介</a>
+                </li>
+                <li>
+                    <a href="http://192.168.1.81:8888">通知公告</a>
+                </li>
+                <li>
+                    <a href="http://192.168.1.81:8888">培训项目</a>
+                </li>
+                <li>
+                    <a href="http://192.168.1.81:8888">报名入口</a>
+                </li>
+                <li>
+                    <a href="http://192.168.1.81:8888">知识库</a>
+                </li>
+                <li>
+                    <a href="http://192.168.1.81:8888">表格下载</a>
+                </li>
+                <li>
+                    <a href="http://192.168.1.81:8888">网上培训</a>
+                </li>
+            </ul>
+        </div>
+        <form id="docSearch" action="">
+            <input type="text" class="search" placeholder="请输入关链词"/>
+        </form>
     </div>
+</div>
+<!--banner -->
+<div class="banner">
+    <img src="images/banner_notice.jpg" alt="">
+</div>
 <!--content -->
-    <div class="content notice">
-        <div class="md-content">
-            <h3 class="notice-title">
-                通知公告 <span>|</span>食品
-                <a href="javascript:void(0);">查看更多></a>
-            </h3>
-            <div  class="notice-list">
+<div class="content notice">
+    <div class="notice-drug">
+        <h3 class="title">
+            <span>通知公告</span>
+            药品
+        </h3>
+        <a class="title-more" href="javascript:void(0);">查看更多></a>
+        <span class="line"></span>
+        <div class="drug-content">
+            <div class="img">
                 <!-- Jssor Slider Begin -->
-                <div class="lf" style="width: 446px">
+                <div style=" width: 446px;margin: 0 auto">
                     <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto;
             top: 0; left: 0; width: 446px; height: 297px; overflow: hidden;">
                         <!-- Slides Container -->
                         <div u="slides" style="cursor: move; position: absolute; left: 0; top: 0; width: 446px; height: 297px; overflow: hidden;">
                             <div>
-                                <img u="image" src="images/notice_slider.jpg" />
+                                <img u="image" src="images/notice_drug_img.jpg" />
                             </div>
                             <div>
-                                <img u="image" src="images/notice_slider.jpg" />
+                                <img u="image" src="images/notice_drug_img.jpg" />
                             </div>
                             <div>
-                                <img u="image" src="images/notice_slider.jpg" />
+                                <img u="image" src="images/notice_drug_img.jpg" />
                             </div>
                         </div>
                         <!-- bullet navigator container -->
@@ -77,78 +100,81 @@
                             <div u="prototype"></div>
                         </div>
                     </div>
-                </div>
-                <!-- Jssor Slider End -->
-                <!--<img class="lf" src="images/notice_slider.jpg" alt="">-->
-                <div class="lf list-rt">
-                    <!--<h3 class="title">-->
-                        <!--<a href="javascript:void(0);">近期</a>-->
-                        <!--<span>|</span>-->
-                        <!--<a href="javascript:void(0);">以往</a>-->
-                    <!--</h3>-->
-                    <div class="row-list">
-                        <a href="javascript:void(0);"><i>></i>深圳市食品药品快速检测技能竞赛复赛圆满结束<span class="time">2016-11-01</span></a>
-                        <a href="javascript:void(0);"><i>></i>深圳市食品药品快速检测技能竞赛复赛圆满结束<span class="time">2016-11-01</span></a>
-                        <a href="javascript:void(0);"><i>></i>深圳市食品药品快速检测技能竞赛复赛圆满结束<span class="time">2016-11-01</span></a>
-                        <a href="javascript:void(0);"><i>></i>深圳市食品药品快速检测技能竞赛复赛圆满结束<span class="time">2016-11-01</span></a>
-                        <a href="javascript:void(0);"><i>></i>深圳市食品药品快速检测技能竞赛复赛圆满结束<span class="time">2016-11-01</span></a>
-                        <a href="javascript:void(0);"><i>></i>深圳市食品药品快速检测技能竞赛复赛圆满结束<span class="time">2016-11-01</span></a>
-                    </div>
+                    <!-- Jssor Slider End -->
+                    <!--<img src="images/project_drug_img.jpg" alt="">-->
                 </div>
             </div>
-        </div>
-        <div class="md-content mgTop-50">
-            <h3 class="notice-title">
-                通知公告 <span>|</span>药品
-                <a href="javascript:void(0);">查看更多></a>
-            </h3>
-            <div  class="notice-list">
-                <img class="lf" src="images/notice_slider.jpg" alt="">
-                <div class="lf list-rt">
-                    <!--<h3 class="title">-->
-                        <!--<a href="javascript:void(0);">近期</a>-->
-                        <!--<span>|</span>-->
-                        <!--<a href="javascript:void(0);">以往</a>-->
-                    <!--</h3>-->
-                    <div class="row-list">
-                        <a href="javascript:void(0);"><i>></i>深圳市食品药品快速检测技能竞赛复赛圆满结束<span class="time">2016-11-01</span></a>
-                        <a href="javascript:void(0);"><i>></i>深圳市食品药品快速检测技能竞赛复赛圆满结束<span class="time">2016-11-01</span></a>
-                        <a href="javascript:void(0);"><i>></i>深圳市食品药品快速检测技能竞赛复赛圆满结束<span class="time">2016-11-01</span></a>
-                        <a href="javascript:void(0);"><i>></i>深圳市食品药品快速检测技能竞赛复赛圆满结束<span class="time">2016-11-01</span></a>
-                        <a href="javascript:void(0);"><i>></i>深圳市食品药品快速检测技能竞赛复赛圆满结束<span class="time">2016-11-01</span></a>
-                        <a href="javascript:void(0);"><i>></i>深圳市食品药品快速检测技能竞赛复赛圆满结束<span class="time">2016-11-01</span></a>
-                    </div>
-                </div>
+            <div class="row-list">
+                <a href="javascript:void(0);"><i>></i>深圳市食品药品快速检测技能竞赛复赛圆满结束<span class="time">2016-11-01</span></a>
+                <a href="javascript:void(0);"><i>></i>深圳市食品药品快速检测技能竞赛复赛圆满结束<span class="time">2016-11-01</span></a>
+                <a href="javascript:void(0);"><i>></i>深圳市食品药品快速检测技能竞赛复赛圆满结束<span class="time">2016-11-01</span></a>
+                <a href="javascript:void(0);"><i>></i>深圳市食品药品快速检测技能竞赛复赛圆满结束<span class="time">2016-11-01</span></a>
+                <a href="javascript:void(0);"><i>></i>深圳市食品药品快速检测技能竞赛复赛圆满结束<span class="time">2016-11-01</span></a>
+                <a href="javascript:void(0);"><i>></i>深圳市食品药品快速检测技能竞赛复赛圆满结束<span class="time">2016-11-01</span></a>
+                <a href="javascript:void(0);"><i>></i>深圳市食品药品快速检测技能竞赛复赛圆满结束<span class="time">2016-11-01</span></a>
+                <a href="javascript:void(0);"><i>></i>深圳市食品药品快速检测技能竞赛复赛圆满结束<span class="time">2016-11-01</span></a>
             </div>
         </div>
-        <!--icon -->
-        <!--<div class="icon">-->
-            <!--<a href="javascript:void(0);"><img src="images/contact.png" alt=""></a>-->
-            <!--<a href="javascript:void(0);"><img src="images/top.png" alt=""></a>-->
-        <!--</div>-->
     </div>
+    <div class="notice-food row">
+        <h3 class="title">
+            <span>通知公告</span> 食品
+        </h3>
+        <a class="title-more" href="javascript:void(0);">查看更多></a>
+        <span class="line"></span>
+        <div  class="md-content">
+            <a class="md-content-list">
+                <div class="list-main">
+                    <img src="images/notice_food01.jpg" alt="">
+                    <h4>2016年11月5日食品检验安全知识宣传</h4>
+                    <p>
+                        关于即将举办第二期餐饮食品安全管理员药品监督管理局关于（餐饮服务许可管理办法）实施细则》的有关规定，学生食堂500人以上的机关工矿食堂、大型以上餐饮单位、中央厨房和集体用餐配送单位必须配备专职的高级食品安全管理员。
+                    </p>
+                </div>
+            </a>
+            <a class="md-content-list">
+                <div class="list-main">
+                    <img src="images/notice_food02.jpg" alt="">
+                    <h4>2016年11月5日食品检验安全知识宣传</h4>
+                    <p>
+                        关于即将举办第二期餐饮食品安全管理员药品监督管理局关于（餐饮服务许可管理办法）实施细则》的有关规定，学生食堂500人以上的机关工矿食堂、大型以上餐饮单位、中央厨房和集体用餐配送单位必须配备专职的高级食品安全管理员。
+                    </p>
+                </div>
+            </a>
+            <a class="md-content-list">
+                <div class="list-main">
+                    <img src="images/notice_food03.jpg" alt="">
+                    <h4>2016年11月5日食品检验安全知识宣传</h4>
+                    <p>
+                        关于即将举办第二期餐饮食品安全管理员药品监督管理局关于（餐饮服务许可管理办法）实施细则》的有关规定，学生食堂500人以上的机关工矿食堂、大型以上餐饮单位、中央厨房和集体用餐配送单位必须配备专职的高级食品安全管理员。
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
 <!--footer -->
-    <div class="footer">
-        <div class="footer-box">
-            <div class="links">
-                <ul>
-                    <li><a href="#">首页</a></li>
-                    <li><a href="#">中心简介</a></li>
-                    <li><a href="#">通知公告</a></li>
-                    <li><a href="#">培训项目</a></li>
-                    <li><a href="#">报名入口</a></li>
-                    <li><a href="#">知识库</a></li>
-                    <li><a href="#">表格下载</a></li>
-                    <li><a href="#">网上培训</a></li>
-                </ul>
-            </div>
-            <p>
-                <span>版权所有 <a href="javascript:void(0);">广东顺德食品药品教育服务网</a></span>
-                <span class="location">地址：<a href="javascript:void(0);">广东省顺德市石岛管理区黄海中路218号</a></span>
-                <span> 粤ICP备06028705</span>
-            </p>
+<div class="footer">
+    <div class="footer-box">
+        <div class="links">
+            <ul>
+                <li> <a href="#">首页</a></li>
+                <li> <a href="#">中心简介</a></li>
+                <li> <a href="#">通知公告</a></li>
+                <li> <a href="#">培训项目</a></li>
+                <li> <a href="#">报名入口</a></li>
+                <li> <a href="#">知识库</a></li>
+                <li> <a href="#">表格下载</a></li>
+                <li> <a href="#">网上培训</a></li>
+            </ul>
         </div>
+        <p>
+            <span>版权所有 <a href="javascript:void(0);">广东顺德食品药品教育服务网</a></span>
+            <span class="location">地址：<a href="javascript:void(0);">广东省顺德市石岛管理区黄海中路218号</a></span>
+            <span> 粤ICP备06028705</span>
+        </p>
     </div>
+</div>
 <script src="//cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
 <script>

@@ -52,6 +52,15 @@ a {
   border-bottom: 4px solid #c40808;
   box-shadow: 0 5px 5px 0 #c9c9c9;
 }
+.title-more {
+  position: absolute;
+  top: 13px;
+  padding: 3px 3px;
+  background: #c40808;
+  color: #fff;
+  border-radius: 3px;
+  right: 0;
+}
 .line {
   position: relative;
   display: inline-block;
@@ -75,10 +84,6 @@ a {
 .md-content-list a {
   display: block;
 }
-.md-content-list span {
-  display: block;
-  height: 22px;
-}
 .md-content-list .list-title {
   font-size: 16px;
   height: 30px;
@@ -100,6 +105,10 @@ a {
   bottom: 0;
   color: #c40808;
   cursor: pointer;
+  display: inline;
+  height: auto;
+  line-height: initial;
+  padding: 1px 2px;
 }
 .mg-top {
   margin-top: 20px;
@@ -143,6 +152,9 @@ a {
 }
 .header .nav li {
   float: left;
+}
+.header .nav li:not(.current-menu-item):hover a {
+  color: #c40808;
 }
 .header .nav a {
   float: left;
@@ -226,7 +238,7 @@ a {
 }
 .row-list i {
   padding-right: 3px;
-  color: #c40808;
+  color: #e0e0e0;
   font-size: 13px;
   font-style: initial;
 }
@@ -234,11 +246,20 @@ a {
   display: block;
   line-height: 30px;
   margin-bottom: 9px;
-  border-bottom: 1px solid #f8f8f8;
+  border-bottom: 1px solid #e0e0e0;
+}
+.row-list a:hover {
+  color: #c40808;
+}
+.row-list a:hover span {
+  color: #c40808;
+}
+.row-list a:hover i {
+  color: #c40808;
 }
 .row-list span {
   float: right;
-  color: #c40808;
+  color: #b1b1b1;
   font-size: 12px;
 }
 /****icon*****/
@@ -272,31 +293,31 @@ a {
 .md-notice .more {
   right: 10px;
 }
-.project {
+.lately-project {
   height: 416px;
   width: 33.33%;
   position: relative;
   overflow: hidden;
 }
-.project .title {
+.lately-project .title {
   margin-left: 20px;
 }
-.project .md-content {
+.lately-project .md-content {
   padding-right: 19px;
   border-right: 1px solid #e5e5e5 ;
 }
-.project .md-content .more {
+.lately-project .md-content .more {
   right: 10px;
 }
-.project .md-content-list {
+.lately-project .md-content-list {
   width: 292px;
 }
-.project .md-content-list a {
+.lately-project .md-content-list a {
   overflow: hidden;
   height: auto;
   margin-bottom: 22px;
 }
-.project p {
+.lately-project p {
   float: right;
   width: 206px;
   margin: 11px 0 0 6px;
@@ -366,8 +387,10 @@ a {
   line-height: 22px;
 }
 .row .md-content .md-content-list p .more {
+  background-color: #c40808;
+  color: #fff;
+  bottom: 3px;
   font-size: 10px;
-  line-height: 22px;
 }
 .friendlink {
   width: 100%;
@@ -416,6 +439,9 @@ a {
   content: "|";
   margin: 0 5px;
 }
+.footer .footer-box .links ul li a:hover {
+  color: #c40808;
+}
 .footer .footer-box p {
   color: #c2c2c2;
   margin-top: 15px;
@@ -427,61 +453,55 @@ a {
   color: #c2c2c2;
 }
 .footer .footer-box p a:hover {
-  color: #f40;
+  color: #c40808;
 }
 /****notice*****/
-.notice {
-  margin-bottom: 40px;
+.notice .notice-drug {
+  position: relative;
 }
-.notice .md-content {
-  padding: 0;
-  margin: 0;
-}
-.notice .md-content .notice-title {
-  font-weight: 200;
-  padding: 0 15px;
-  color: #fff;
-  width: 970px;
-  line-height: 45px;
-  background-color: #c50b0b;
-}
-.notice .md-content .notice-title span {
-  padding: 0 8px 0 5px;
-}
-.notice .md-content .notice-title a {
-  float: right;
-  color: #fff;
-  font-size: 14px;
-}
-.notice .md-content .notice-list {
-  margin-top: 25px;
+.notice .notice-drug .drug-content {
   overflow: hidden;
+  margin-top: 30px;
 }
-.notice .md-content .notice-list .list-rt {
-  margin-left: 16px;
-  width: 538px;
-}
-.notice .md-content .notice-list .list-rt .title {
-  font-size: 16px;
-  border: 0;
-}
-.notice .md-content .notice-list .list-rt .title span {
-  color: #ededed;
-}
-.notice .md-content .notice-list .list-rt .row-list {
-  width: 100%;
-}
-.notice .md-content .notice-list .list-rt .row-list .time {
+.notice .notice-drug .row-list {
+  margin-left: 20px;
   float: right;
-  font-size: 12px;
-  color: #c60e0e;
+  width: 504px;
 }
-.notice .mgTop-50 {
+.notice .notice-drug .img {
+  width: 476px;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #e0e0e0;
+  float: left;
+}
+.notice .notice-food {
+  position: relative;
+  margin-top: 78px;
+}
+.notice .notice-food .md-content {
   margin-top: 50px;
+  padding: 0;
+  background-color: #fff;
+  height: inherit;
 }
-.notice .icon {
-  bottom: 70px;
-  right: -46px;
+.notice .notice-food .md-content-list {
+  width: 286px;
+  padding: 7px;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+.notice .notice-food .md-content-list:nth-child(2) {
+  margin: 0 50px;
+}
+.notice .notice-food .md-content-list:hover {
+  color: #c40808;
+}
+.notice .notice-food .md-content-list h4 {
+  margin-top: 12px;
+}
+.notice .notice-food .md-content-list p {
+  margin-top: 0;
 }
 /****login*****/
 .login form {
@@ -758,6 +778,71 @@ a {
   font-size: 16px;
   line-height: 1.5em;
 }
+/****project*****/
+.project {
+  padding: 25px 0;
+}
+.title span {
+  position: relative;
+  padding-right: 5px;
+  margin-right: 5px;
+  border-right: 1px solid #cbcbcb;
+}
+.title span:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent transparent transparent #cbcbcb;
+  right: -9px;
+  top: 7px;
+}
+.project-drug {
+  position: relative;
+}
+.project-drug .drug-content {
+  overflow: hidden;
+  margin-top: 30px;
+}
+.project-drug .row-list {
+  float: left;
+  width: 508px;
+  padding-right: 15px;
+}
+.project-drug .img {
+  width: 476px;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #e0e0e0;
+  float: right;
+}
+.project-food {
+  margin-top: 65px;
+  position: relative;
+}
+.project-food .md-content {
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 35px;
+}
+.project-food .md-content-list:hover {
+  color: #c40808;
+}
+.project-food .row .md-content .md-content-list h4 {
+  line-height: 35px;
+}
+.project-food .md-content .md-content-list p .more {
+  display: inline;
+  height: auto;
+  line-height: initial;
+  padding: 1px 2px;
+  background-color: #c40808;
+  color: #fff;
+  bottom: 3px;
+}
 .jssorb21 {
   position: absolute;
 }
@@ -797,7 +882,7 @@ a {
   overflow: hidden;
   padding-top: 10px;
   position: relative;
-  border-top: 1px solid #E8E8E8;
+  /*border-top: 1px solid #E8E8E8;*/
 }
 .page_navi a {
   display: inline-block;
