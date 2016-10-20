@@ -1,8 +1,3 @@
-<!--icon -->
-        <div class="icon">
-            <a href="javascript:void(0);"><img src="<?php bloginfo('template_url');?>/images/contact.png" alt=""></a>
-            <a href="javascript:void(0);"><img src="<?php bloginfo('template_url');?>/images/top.png" alt=""></a>
-        </div>
     </div>
 <!--footer -->
     <div class="footer">

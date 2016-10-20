@@ -143,7 +143,7 @@
             <h3 class="title">中心新闻</h3>
             <span class="line"></span>
             <div  class="md-content">
-            	<?php query_posts('showposts=4&cat=3'); ?>
+            	<?php query_posts('showposts=4&cat=12'); ?>
                 	<?php while (have_posts()) : the_post(); ?>
 
 						<div class="md-content-list">
