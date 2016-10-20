@@ -84,22 +84,22 @@
 						<?php } else {?>
 						<img src="图片地址" alt="替代文本" />
 						<?php } ?>
-	                    <div class="md-content-list">
-	                        <a class="list-title" href="<?php the_permalink(); ?>"><span>最新</span><?php echo wp_trim_words(get_the_title(),15); ?></a>
-	                        <a href="javascript:void(0);"><?php echo wp_trim_words(get_the_excerpt(),40)?></a>
-	                    </div>
+	                    <a href="<?php the_permalink(); ?>" class="md-content-list">
+	                        <span class="list-title"><span>最新</span><?php echo wp_trim_words(get_the_title(),15); ?></span>
+	                        <p href="javascript:void(0);"><?php echo wp_trim_words(get_the_excerpt(),40)?></p>
+	                    </a>
                 <?php endwhile; wp_reset_query(); ?>
                 <?php query_posts('showposts=1&offset=1&cat=2'); ?>
                 	<?php while (have_posts()) : the_post(); ?>
-	                    <div class="md-content-list">
-	                        <a class="list-title" href="<?php the_permalink(); ?>"><span>最新</span><?php echo wp_trim_words(get_the_title(),15); ?></a>
-	                        <a href="javascript:void(0);"><?php echo wp_trim_words(get_the_excerpt(),40)?></a>
-	                    </div>
+	                    <a class="md-content-list">
+	                        <span class="list-title" href="<?php the_permalink(); ?>"><span>最新</span><?php echo wp_trim_words(get_the_title(),15); ?></span>
+	                        <p href="javascript:void(0);"><?php echo wp_trim_words(get_the_excerpt(),40)?></p>
+	                    </a>
                 <?php endwhile; wp_reset_query(); ?>
                     <a class="more">more>></a>
                 </div>
             </div>
-            <div class="lf project">
+            <div class="lf lately-project">
                 <h3 class="title">近期培训项目</h3>
                 <div  class="md-content">
                     <div class="md-content-list">
@@ -141,12 +141,12 @@
         </div>
         <div class="news row">
             <h3 class="title">中心新闻</h3>
+            <a class="title-more" href="<?php echo get_category_link(6) ?>">查看更多></a>
             <span class="line"></span>
             <div  class="md-content">
             	<?php query_posts('showposts=4&cat=12'); ?>
                 	<?php while (have_posts()) : the_post(); ?>
-
-						<div class="md-content-list">
+						<a  href="<?php the_permalink(); ?>" class="md-content-list">
 		                    <h4><?php echo wp_trim_words(get_the_title(),13); ?></h4>
 		                   <div class="list-main">
 		                   		<?php if ( has_post_thumbnail() ) { ?>
@@ -156,10 +156,10 @@
 									<?php } ?>
 		                       <p>
 		                           <?php echo wp_trim_words(get_the_excerpt(),30)?>
-		                           <a href="<?php the_permalink(); ?>" class="more">more>></a>
+		                           <span class="more">more</span>
 		                       </p>
 		                   </div>
-		                </div>
+		                </a>
                 <?php endwhile; wp_reset_query(); ?>
             </div>
         </div>

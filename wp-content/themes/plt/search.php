@@ -11,8 +11,8 @@
             <a href="<?php the_permalink(); ?>" class="results_list">
                 <div class="title media-left">
                     <div class="wrap">
-                        <h4>2016 &nbsp;10</h4>
-                        <div class="day">09</div>
+                        <h4><?php the_time('Y')?> &nbsp;<?php the_time('m')?></h4>
+                        <div class="day"><?php the_time('d')?></div>
                     </div>
                 </div>
                 <div class="media-text">

@@ -3,13 +3,14 @@
 ?>
 <!--banner -->
     <div class="banner">
-        <img src="<?php bloginfo('template_url'); ?>/images/banner.jpg" alt="">
+        <img src="<?php bloginfo('template_url'); ?>/images/banner_online.jpg" alt="">
     </div>
 <!--content -->
     <div class="content">
         <div class="training row">
              <h3 class="title">网络课程视频</h3>
              <span class="line"></span>
+              <a class="title-more" href="javascript:void(0);">查看更多></a>
              <div  class="md-content">
              	 <?php query_posts('showposts=4&cat=5'); ?>
                      <?php while (have_posts()) : the_post(); ?>
@@ -31,6 +32,7 @@
     <div class="online-learning">
          <h3 class="title">在线学习功能</h3>
               <span class="line"></span>
+               <a class="title-more" href="javascript:void(0);">查看更多></a>
                     <div  class="md-content">
                            <div class="row-list list-block">
                                 <?php while(have_posts()):the_post(); ?>
