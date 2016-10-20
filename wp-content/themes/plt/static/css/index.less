@@ -62,14 +62,25 @@ a {
 }
 .md-content{
   margin-top: 30px;
-  padding-left:20px ;
+  padding-left:18px ;
   height: 100%;
 }
-.md-content-list{
+a{
+  &:hover{
+    .list-title{
+      color: #c40808;
+    }
+    p{
+      color: #c40808;
+      text-decoration: underline;
+    }
+  }
+}
+.md-content-list {
   display: block;
   cursor: pointer;
   position: relative;
-  a{
+  a {
     display: block;
   }
   //span{
@@ -409,12 +420,17 @@ a {
   margin-top: 30px;
   overflow: hidden;
   background: #f8f8f8;
-  padding-right: 20px;
-  height: 213px;
+  padding-bottom: 10px;
   .md-content-list{
     float: left;
     width: 211px;
-    margin: 0 14px;
+    margin: 0 15px;
+    display: block;
+    &:hover{
+      h4{
+       color: #c40808;
+      }
+    }
     h4{
       font-weight: 200;
       line-height: 47px;
@@ -521,7 +537,7 @@ a {
     }
     .md-content-list{
       width: 286px;
-      padding: 7px;
+      padding: 7px 7px 10px 7px;
       margin: 0;
       background-color: #f8f8f8;
       &:nth-child(2){
@@ -535,6 +551,8 @@ a {
       }
       p{
         margin-top: 0;
+        height: 130px;
+        overflow: hidden;
       }
     }
   }
@@ -716,12 +734,15 @@ a {
   width: 100%
 }
 .training{
+  position: relative;
   .md-content{
     height: auto;
-    padding: 35px 0 30px 0;
+    padding-top: 35px;
+    padding-bottom: 30px;
   }
 }
 .online-learning{
+  position: relative;
   margin: 60px 0;
   .md-content{
     padding-left: 10px;
@@ -773,6 +794,31 @@ a {
   a{
     color: #c40808;
     text-decoration: none;
+  }
+}
+.pager{
+  overflow: hidden;
+  margin-bottom: 53px;
+  a{
+    color:#c40808;
+  }
+  .pager-list{
+    li{
+      float: left;
+      margin-right: 3px;
+      height: 22px;
+      line-height: 22px;
+      padding: 4px 10px;
+      background: #ededed;
+      color: #c40808;
+      font-size: 14px;
+    }
+    .bgcc{
+      background-color: #c40808;
+      a{
+        color: #fff;
+      }
+    }
   }
 }
 /****document*****/
@@ -949,6 +995,30 @@ a {
     background-color: #c40808;
     color: #fff;
     bottom: 3px;
+  }
+}
+/****newsCentent*****/
+.item{
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  margin-bottom: 48px;
+}
+.newsCenter{
+  .newsCenter-list{
+    margin-top: 48px;
+  }
+  .media-text{
+    width: 710px;
+    margin-left: 23px;
+    h3{
+      font-size: 16px;
+    }
+    p{
+      text-indent:inherit;
+      margin-top: 25px;
+      font-size: 14px;
+    }
   }
 }
 // bullet navigator container

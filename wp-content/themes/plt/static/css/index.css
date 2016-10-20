@@ -73,8 +73,15 @@ a {
 }
 .md-content {
   margin-top: 30px;
-  padding-left: 20px ;
+  padding-left: 18px ;
   height: 100%;
+}
+a:hover .list-title {
+  color: #c40808;
+}
+a:hover p {
+  color: #c40808;
+  text-decoration: underline;
 }
 .md-content-list {
   display: block;
@@ -370,13 +377,16 @@ a {
   margin-top: 30px;
   overflow: hidden;
   background: #f8f8f8;
-  padding-right: 20px;
-  height: 213px;
+  padding-bottom: 10px;
 }
 .row .md-content .md-content-list {
   float: left;
   width: 211px;
-  margin: 0 14px;
+  margin: 0 15px;
+  display: block;
+}
+.row .md-content .md-content-list:hover h4 {
+  color: #c40808;
 }
 .row .md-content .md-content-list h4 {
   font-weight: 200;
@@ -487,7 +497,7 @@ a {
 }
 .notice .notice-food .md-content-list {
   width: 286px;
-  padding: 7px;
+  padding: 7px 7px 10px 7px;
   margin: 0;
   background-color: #f8f8f8;
 }
@@ -502,6 +512,8 @@ a {
 }
 .notice .notice-food .md-content-list p {
   margin-top: 0;
+  height: 130px;
+  overflow: hidden;
 }
 /****login*****/
 .login form {
@@ -620,11 +632,16 @@ a {
 .list-block {
   width: 100%;
 }
+.training {
+  position: relative;
+}
 .training .md-content {
   height: auto;
-  padding: 35px 0 30px 0;
+  padding-top: 35px;
+  padding-bottom: 30px;
 }
 .online-learning {
+  position: relative;
   margin: 60px 0;
 }
 .online-learning .md-content {
@@ -675,6 +692,29 @@ a {
 .paging a {
   color: #c40808;
   text-decoration: none;
+}
+.pager {
+  overflow: hidden;
+  margin-bottom: 53px;
+}
+.pager a {
+  color: #c40808;
+}
+.pager .pager-list li {
+  float: left;
+  margin-right: 3px;
+  height: 22px;
+  line-height: 22px;
+  padding: 4px 10px;
+  background: #ededed;
+  color: #c40808;
+  font-size: 14px;
+}
+.pager .pager-list .bgcc {
+  background-color: #c40808;
+}
+.pager .pager-list .bgcc a {
+  color: #fff;
 }
 /****document*****/
 .text-title {
@@ -842,6 +882,28 @@ a {
   background-color: #c40808;
   color: #fff;
   bottom: 3px;
+}
+/****newsCentent*****/
+.item {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  margin-bottom: 48px;
+}
+.newsCenter .newsCenter-list {
+  margin-top: 48px;
+}
+.newsCenter .media-text {
+  width: 710px;
+  margin-left: 23px;
+}
+.newsCenter .media-text h3 {
+  font-size: 16px;
+}
+.newsCenter .media-text p {
+  text-indent: inherit;
+  margin-top: 25px;
+  font-size: 14px;
 }
 .jssorb21 {
   position: absolute;
