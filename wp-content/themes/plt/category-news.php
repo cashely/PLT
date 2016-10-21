@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!--banner -->
     <div class="banner">
-        <img src="<?php bloginfo('template_url'); ?>/images/results-banner.jpg" alt="">
+        <img src="<?php bloginfo('template_url'); ?>/images/banner_newsCenter.jpg" alt="">
     </div>
 <!--content -->
    <!--content -->
@@ -14,6 +14,7 @@
            <div class="newsCenter-list">
            <?php while(have_posts()):the_post(); ?>
                <a href="" class="item">
+               <?php if ( has_post_thumbnail() ) { ?>
                <?php the_post_thumbnail('indexNews'); ?>
                <?php } else {?>
                <img class="lf" src="<?php bloginfo('template_url');?>/images/list01.jpg" alt="">

@@ -155,7 +155,7 @@ a:hover p {
   float: left;
   width: 288px;
   height: 100%;
-  background: url(../images/logo.png) center center no-repeat;
+  background: url(images/logo.png) center center no-repeat;
 }
 .header .nav li {
   float: left;
@@ -197,7 +197,7 @@ a:hover p {
   height: 15px;
   top: 5px;
   left: 5px;
-  background: url("../images/search.png") no-repeat;
+  background: url("images/search.png") no-repeat;
   z-index: 3;
 }
 .header .nav .search {
@@ -795,7 +795,7 @@ a:hover p {
   margin-bottom: 3px;
   font-size: 16px;
   color: #c40808;
-  background: url(../images/bg_day.png) no-repeat center;
+  background: url(images/bg_day.png) no-repeat center;
 }
 .media-left .wrap {
   padding: 8px 16px;
@@ -918,7 +918,7 @@ a:hover p {
   line-height: 19px;
   color: white;
   font-size: 12px;
-  background: url(../images/b21.png) no-repeat;
+  background: url(images/b21.png) no-repeat;
   overflow: hidden;
   cursor: pointer;
 }

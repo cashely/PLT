@@ -141,7 +141,7 @@
         </div>
         <div class="news row">
             <h3 class="title">中心新闻</h3>
-            <a class="title-more" href="<?php echo get_category_link(6) ?>">查看更多></a>
+            <a class="title-more" href="<?php echo get_category_link(12) ?>">查看更多></a>
             <span class="line"></span>
             <div  class="md-content">
             	<?php query_posts('showposts=4&cat=12'); ?>

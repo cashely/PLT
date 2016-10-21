@@ -11,7 +11,7 @@
             <div  class="md-content">
                 <div class="row-list list-block">
                 <?php while(have_posts()):the_post(); ?>
-                        <a href="<?php the_permalink(); ?>"><i>></i><?php the_title(); ?><span><?php the_time('Y-m-d')?></span></a>
+                    <a href="<?php the_permalink(); ?>"><i>></i><?php the_title(); ?><span><?php the_time('Y-m-d')?></span></a>
                 <?php endwhile; ?>
                 </div>
             </div>
