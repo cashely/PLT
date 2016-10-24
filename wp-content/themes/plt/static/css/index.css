@@ -822,13 +822,13 @@ a:hover p {
 .project {
   padding: 25px 0;
 }
-.title span {
+.title .title-text {
   position: relative;
   padding-right: 5px;
   margin-right: 5px;
   border-right: 1px solid #cbcbcb;
 }
-.title span:after {
+.title .title-text:after {
   content: "";
   position: absolute;
   display: block;
