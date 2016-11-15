@@ -18,11 +18,11 @@
     <div class="topbar">
         <div class="topbar-box">
             <div class="topbar-left">
-                <a href="/">首页</a>
-                <span>|</span>
-                <a href="location.html">
-                    网站地图
-                </a>
+                 <?php
+                     if(function_exists('wp_nav_menu')) {
+                          wp_nav_menu(array('theme_location'=>'topMenu'));
+                     }
+                 ?>
             </div>
                 
             <div class="bdsharebuttonbox topbar-right" data-tag="share_1">

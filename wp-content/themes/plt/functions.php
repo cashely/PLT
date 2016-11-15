@@ -6,7 +6,8 @@
 	if(function_exists('register_nav_menus')){
 		register_nav_menus(array(
 			'primary' => '导航菜单',
-			'footerMenu' => '底部菜单'
+			'footerMenu' => '底部菜单',
+			'topMenu' => '头部菜单'
 		));
 	};
 	//添加缩略图功能
