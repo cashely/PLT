@@ -124,14 +124,17 @@ a{
   cursor: pointer;
   display: inline;
   height: auto;
-  line-height: initial;
+  line-height: normal;
   padding: 1px 2px;
+  margin-top: 3px;
   //background-color: #c40808;
   //color: #fff;
   //bottom: 3px;
 }
 .mg-top{
   margin-top: 20px;
+  height: 340px;
+  overflow: hidden;
 }
 /****topbar*****/
 .topbar{
@@ -148,6 +151,7 @@ a{
   margin: 0 auto;
 }
 .topbar-left{
+  float: left;
  text-align: left;
   li{
     float: left;
@@ -918,15 +922,30 @@ a{
   line-height: 55px;
   text-align: right;
   padding: 0 20px;
+  font-size: 14px;
 }
 .document{
   margin-bottom: 45px;
-  .document-content{
+}
+.document-content{
+  font-size: 16px;
+  padding: 0 20px;
+  line-height: 30px;
+  p{
+    text-indent: 32px;
+}
+  ul{
+    margin-left: 60px;
+  }
+  table{
+    border: 1px solid #666;
+    border-collapse: collapse;
+    td{
+      border: 1px solid #666;
+    }
     p{
-      font-size: 16px;
-      text-indent: 32px;
-      line-height: 30px;
-      padding: 0 20px;
+      text-indent: inherit;
+      padding:  0;
     }
   }
 }

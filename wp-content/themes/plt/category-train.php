@@ -70,8 +70,10 @@
                       		<img class="lf" src="<?php bloginfo('template_url'); ?>/images/project-food01.jpg" alt="">
                       		<?php } ?>
                           <p>
-                              <?php echo wp_trim_words(get_the_excerpt(),25)?>
-                              <span class="more">more</span>
+                           <?php if ( wp_trim_words(get_the_excerpt(),1) ) { ?>
+                                <?php echo wp_trim_words(get_the_excerpt(),25)?>
+                                <span class="more">more</span>
+                            <?php } ?>
                           </p>
                       </div>
                    </a>

@@ -117,11 +117,14 @@ a:hover p {
   cursor: pointer;
   display: inline;
   height: auto;
-  line-height: initial;
+  line-height: normal;
   padding: 1px 2px;
+  margin-top: 3px;
 }
 .mg-top {
   margin-top: 20px;
+  height: 340px;
+  overflow: hidden;
 }
 /****topbar*****/
 .topbar {
@@ -138,6 +141,7 @@ a:hover p {
   margin: 0 auto;
 }
 .topbar-left {
+  float: left;
   text-align: left;
 }
 .topbar-left li {
@@ -790,15 +794,32 @@ a:hover p {
   line-height: 55px;
   text-align: right;
   padding: 0 20px;
+  font-size: 14px;
 }
 .document {
   margin-bottom: 45px;
 }
-.document .document-content p {
+.document-content {
   font-size: 16px;
-  text-indent: 32px;
-  line-height: 30px;
   padding: 0 20px;
+  line-height: 30px;
+}
+.document-content p {
+  text-indent: 32px;
+}
+.document-content ul {
+  margin-left: 60px;
+}
+.document-content table {
+  border: 1px solid #666;
+  border-collapse: collapse;
+}
+.document-content table td {
+  border: 1px solid #666;
+}
+.document-content table p {
+  text-indent: inherit;
+  padding: 0;
 }
 /****video*****/
 .video {

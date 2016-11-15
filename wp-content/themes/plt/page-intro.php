@@ -33,7 +33,7 @@
          <div id="allmap">
               <img src="<?php bloginfo('template_url'); ?>/images/allmap.jpg" alt="">
          </div>
-
+    </div>
 <?php
 	get_footer();
 ?>

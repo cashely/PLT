@@ -91,9 +91,9 @@
                 <?php endwhile; wp_reset_query(); ?>
                 <?php query_posts('showposts=1&offset=1&cat=2'); ?>
                 	<?php while (have_posts()) : the_post(); ?>
-	                    <a class="md-content-list">
-	                        <span class="list-title" href="<?php the_permalink(); ?>"><span>最新</span><?php echo wp_trim_words(get_the_title(),15); ?></span>
-	                        <p href="javascript:void(0);"><?php echo wp_trim_words(get_the_excerpt(),40)?></p>
+	                    <a href="<?php the_permalink(); ?>" class="md-content-list">
+	                        <span class="list-title" ><span>最新</span><?php echo wp_trim_words(get_the_title(),15); ?></span>
+	                        <p><?php echo wp_trim_words(get_the_excerpt(),40)?></p>
 	                    </a>
                 <?php endwhile; wp_reset_query(); ?>
                     <a class="more" href="<?php echo get_category_link(2) ?>">more>></a>
@@ -115,7 +115,7 @@
 		                        </a>
 		                <?php endwhile; wp_reset_query(); ?>
                     </div>
-                    <a class="more" href="<?php echo get_category_link(3) ?>">more>></a>
+                      <a class="more" href="<?php the_permalink(4); ?>">more>></a>
                 </div>
             </div>
             <div class="lf course">
@@ -135,8 +135,9 @@
 		                <?php endwhile; wp_reset_query(); ?>
                         
                     </div>
-                    <a class="more" href="<?php echo get_category_link(3) ?>">more>></a>
+
                 </div>
+                     <a href="<?php bloginfo('url'); ?>/regist" class="more" >more>></a>
             </div>
         </div>
         <div class="news row">
