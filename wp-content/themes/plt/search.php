@@ -18,7 +18,7 @@
                 <div class="media-text">
                     <h3><?php the_title(); ?></h3>
                     <p>
-                       <?php echo mb_strimwidth(strip_tags(apply_filters('the_content', $post->post_content)), 0, 205,"……"); ?>
+                       <?php echo wp_trim_words(get_the_content(),205); ?>
                     </p>
                 </div>
             </a>
