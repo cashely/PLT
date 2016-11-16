@@ -9,7 +9,7 @@
 <div class="content notice">
     <div class="notice-drug">
         <h3 class="title">
-            <span>通知公告</span>
+            <span class="title-text">通知公告</span>
             药品
         </h3>
         <a class="title-more" href="<?php echo get_category_link(6) ?>">查看更多></a>
@@ -53,7 +53,8 @@
     </div>
     <div class="notice-food row">
         <h3 class="title">
-            <span>通知公告</span> 食品
+            <span class="title-text">通知公告</span>
+             食品
         </h3>
         <a class="title-more" href="<?php echo get_category_link(7) ?>">查看更多></a>
         <span class="line"></span>
@@ -76,6 +77,30 @@
             <?php endwhile; wp_reset_query(); ?>
         </div>
     </div>
+    <div class="other">
+            <h3 class="title">
+                其他
+            </h3>
+            <a class="title-more" href="<?php echo get_category_link(15) ?>">查看更多></a>
+            <span class="line"></span>
+            <div class="md-content">
+                <img src="<?php bloginfo('template_url');?>/images/notice_other.jpg"  class="lf" alt="">
+                <div class="row-list list-block rt">
+                      <?php query_posts('showposts=4&cat=15')?>
+                           <?php while(have_posts()):the_post()?>
+                           <a title="<?php the_title();?>" href="<?php the_permalink(); ?>"><i>></i><?php echo wp_trim_words(get_the_title(),25);?><span class="time"><?php the_time('Y-m-d');?></span></a>
+                           <?php endwhile;wp_reset_query(); ?>
+                                <?php
+                                     wp_link_pages( array(
+                                     'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfourteen' ) . '</span>',
+                                     'after'       => '</div>',
+                                     'link_before' => '<span>',
+                                     'link_after'  => '</span>',
+                                     ) );
+                                     ?>
+                </div>
+            </div>
+        </div>
 </div>
 <script src="//cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url');?>/js/jssor.slider.mini.js"></script>

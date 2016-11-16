@@ -30,12 +30,17 @@ a {
 }
 .of-hide{
   overflow: hidden;
+  .more{
+    position: absolute;
+    right:0;
+    bottom: 0;
+  }
 }
 .title{
   font-size: 18px;
   font-weight: 200;
   display: inline-block;
-  padding: 8px 16px;
+  padding: 8px 13px;
   margin-left: 5px;
   background: #f8f8f8;
   border-bottom: 4px solid #c40808;
@@ -111,21 +116,25 @@ a{
 //  cursor: pointer;
 //}
 .more{
-  position: absolute;
-  right:0;
-  bottom: 0;
+  //position: absolute;
+  //right:0;
+  //bottom: 0;
+  float: right;
   color: #c40808;
   cursor: pointer;
   display: inline;
   height: auto;
-  line-height: initial;
+  line-height: normal;
   padding: 1px 2px;
+  margin-top: 3px;
   //background-color: #c40808;
   //color: #fff;
   //bottom: 3px;
 }
 .mg-top{
   margin-top: 20px;
+  height: 340px;
+  overflow: hidden;
 }
 /****topbar*****/
 .topbar{
@@ -143,8 +152,14 @@ a{
 }
 .topbar-left{
   float: left;
-  span{
-    padding: 0px 5px;
+ text-align: left;
+  li{
+    float: left;
+  }
+ li:first-child:after{
+    content: "|";
+    padding: 0 10px;
+    display: inline-block;
   }
 }
 .topbar-right{
@@ -207,7 +222,7 @@ a{
     //}
     #menu-menu-1{
       li:first-child{
-       margin-left: 10px;
+       margin-left: 15px;
       }
     }
     .current-menu-item{
@@ -454,14 +469,18 @@ a{
     padding: 0;
   }
   .md-content-list{
-    text-align: justify;
+    //text-align: justify;
     li{
       display: inline-block;
       height: auto;
       min-height: 55px;
       margin-bottom: 22px;
+      margin-right: 25px;
     }
-    .justify_fix{display:inline-block; width:100%; height:0; overflow:hidden;}
+    li:last-child{
+      margin-right: 0;
+    }
+    //.justify_fix{display:inline-block; width:100%; height:0; overflow:hidden;}
   }
 }
 /****footer*****/
@@ -476,9 +495,12 @@ a{
     .links{
       overflow: hidden;
       ul{
-        margin-left: -14px;
+        text-align: center;
         li{
           display: inline-block;
+          &:first-child:before{
+            display: none;
+          }
           &:before{
             display: inline-block;
             content: "|";
@@ -493,6 +515,7 @@ a{
     p{
       color: #c2c2c2;
       margin-top: 15px;
+      text-align: center;
       .location{
         margin: 0 25px 0 5px;
       }
@@ -553,6 +576,20 @@ a{
         margin-top: 0;
         height: 130px;
         overflow: hidden;
+      }
+    }
+  }
+}
+.other{
+  position: relative;
+  margin-top: 75px;
+  .md-content{
+    padding: 0;
+    overflow: hidden;
+    .row-list{
+      width: 766px;
+      a{
+        line-height: 28px;
       }
     }
   }
@@ -701,24 +738,75 @@ a{
   .icon{
     bottom: 35px;
   }
+  .login-msg{
+    .msg-title{
+      height: 44px;
+      text-align: center;
+      background-color: #f8f8f8;
+      line-height: 44px;
+      font-size: 18px;
+      color: #c40808;
+    }
+    ul{
+      font-size: 16px;
+      color: #c40808;
+      line-height: 30px;
+      margin-top: 20px;
+      li{
+        h4{
+          font-weight: normal;
+        }
+        p{
+          color: #333;
+        }
+      }
+
+    }
+  }
 }
 /****location*****/
 .location{
   position: relative;
   width: 1000px;
-  margin: 40px auto;
-  span{
-    margin-left: 30px;
-    img{
-      margin-right: 10px;
-      vertical-align: middle;
+  margin: 35px auto 45px auto;
+  text-align: left;
+  .introduce-text{
+    margin-top: 35px;
+    .introduce{
+      line-height: 2.5em;
+      font-size: 18px;
+      text-align:justify;
+      text-indent: 2em;
+      letter-spacing: 1px;
     }
-    &:first-child{
-      margin: 0;
+  }
+  .location-message {
+    width: 954px;
+    margin: 35px auto 0 auto;
+    text-align: center;
+    ul{
+      text-align: left;
+      li{
+        font-size: 18px;
+        margin-bottom: 30px;
+        img{
+          margin-right: 10px;
+          vertical-align: middle;
+        }
+        //&:first-child{
+        //  margin: 0;
+        //}
+      }
+    }
+    .lm-left{
+      width: 320px;
+    }
+    .lm-right{
+
     }
   }
   #allmap {
-    width: 954px;
+    width: 952px;
     height: 370px;
     overflow: hidden;
     margin:20px auto;
@@ -834,15 +922,30 @@ a{
   line-height: 55px;
   text-align: right;
   padding: 0 20px;
+  font-size: 14px;
 }
 .document{
   margin-bottom: 45px;
-  .document-content{
+}
+.document-content{
+  font-size: 16px;
+  padding: 0 20px;
+  line-height: 30px;
+  p{
+    text-indent: 32px;
+}
+  ul{
+    margin-left: 60px;
+  }
+  table{
+    border: 1px solid #666;
+    border-collapse: collapse;
+    td{
+      border: 1px solid #666;
+    }
     p{
-      font-size: 16px;
-      text-indent: 32px;
-      line-height: 30px;
-      padding: 0 20px;
+      text-indent: inherit;
+      padding:  0;
     }
   }
 }
@@ -935,7 +1038,7 @@ a{
   padding: 25px 0;
 }
 .title{
-  span{
+  .title-text{
     position: relative;
     padding-right: 5px;
     margin-right: 5px;

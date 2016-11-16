@@ -42,11 +42,16 @@ a {
 .of-hide {
   overflow: hidden;
 }
+.of-hide .more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 .title {
   font-size: 18px;
   font-weight: 200;
   display: inline-block;
-  padding: 8px 16px;
+  padding: 8px 13px;
   margin-left: 5px;
   background: #f8f8f8;
   border-bottom: 4px solid #c40808;
@@ -107,18 +112,19 @@ a:hover p {
   vertical-align: 1px;
 }
 .more {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  float: right;
   color: #c40808;
   cursor: pointer;
   display: inline;
   height: auto;
-  line-height: initial;
+  line-height: normal;
   padding: 1px 2px;
+  margin-top: 3px;
 }
 .mg-top {
   margin-top: 20px;
+  height: 340px;
+  overflow: hidden;
 }
 /****topbar*****/
 .topbar {
@@ -136,9 +142,15 @@ a:hover p {
 }
 .topbar-left {
   float: left;
+  text-align: left;
 }
-.topbar-left span {
-  padding: 0px 5px;
+.topbar-left li {
+  float: left;
+}
+.topbar-left li:first-child:after {
+  content: "|";
+  padding: 0 10px;
+  display: inline-block;
 }
 .topbar-right {
   float: right;
@@ -170,7 +182,7 @@ a:hover p {
   line-height: 81px;
 }
 .header .nav #menu-menu-1 li:first-child {
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .header .nav .current-menu-item a {
   color: #fff;
@@ -409,20 +421,15 @@ a:hover p {
 .friendlink .md-content {
   padding: 0;
 }
-.friendlink .md-content-list {
-  text-align: justify;
-}
 .friendlink .md-content-list li {
   display: inline-block;
   height: auto;
   min-height: 55px;
   margin-bottom: 22px;
+  margin-right: 25px;
 }
-.friendlink .md-content-list .justify_fix {
-  display: inline-block;
-  width: 100%;
-  height: 0;
-  overflow: hidden;
+.friendlink .md-content-list li:last-child {
+  margin-right: 0;
 }
 /****footer*****/
 .footer {
@@ -439,10 +446,13 @@ a:hover p {
   overflow: hidden;
 }
 .footer .footer-box .links ul {
-  margin-left: -14px;
+  text-align: center;
 }
 .footer .footer-box .links ul li {
   display: inline-block;
+}
+.footer .footer-box .links ul li:first-child:before {
+  display: none;
 }
 .footer .footer-box .links ul li:before {
   display: inline-block;
@@ -455,6 +465,7 @@ a:hover p {
 .footer .footer-box p {
   color: #c2c2c2;
   margin-top: 15px;
+  text-align: center;
 }
 .footer .footer-box p .location {
   margin: 0 25px 0 5px;
@@ -514,6 +525,20 @@ a:hover p {
   margin-top: 0;
   height: 130px;
   overflow: hidden;
+}
+.other {
+  position: relative;
+  margin-top: 75px;
+}
+.other .md-content {
+  padding: 0;
+  overflow: hidden;
+}
+.other .md-content .row-list {
+  width: 766px;
+}
+.other .md-content .row-list a {
+  line-height: 28px;
 }
 /****login*****/
 .login form {
@@ -601,24 +626,64 @@ a:hover p {
 .login .icon {
   bottom: 35px;
 }
+.login .login-msg .msg-title {
+  height: 44px;
+  text-align: center;
+  background-color: #f8f8f8;
+  line-height: 44px;
+  font-size: 18px;
+  color: #c40808;
+}
+.login .login-msg ul {
+  font-size: 16px;
+  color: #c40808;
+  line-height: 30px;
+  margin-top: 20px;
+}
+.login .login-msg ul li h4 {
+  font-weight: normal;
+}
+.login .login-msg ul li p {
+  color: #333;
+}
 /****location*****/
 .location {
   position: relative;
   width: 1000px;
-  margin: 40px auto;
+  margin: 35px auto 45px auto;
+  text-align: left;
 }
-.location span {
-  margin-left: 30px;
+.location .introduce-text {
+  margin-top: 35px;
 }
-.location span img {
+.location .introduce-text .introduce {
+  line-height: 2.5em;
+  font-size: 18px;
+  text-align: justify;
+  text-indent: 2em;
+  letter-spacing: 1px;
+}
+.location .location-message {
+  width: 954px;
+  margin: 35px auto 0 auto;
+  text-align: center;
+}
+.location .location-message ul {
+  text-align: left;
+}
+.location .location-message ul li {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.location .location-message ul li img {
   margin-right: 10px;
   vertical-align: middle;
 }
-.location span:first-child {
-  margin: 0;
+.location .location-message .lm-left {
+  width: 320px;
 }
 .location #allmap {
-  width: 954px;
+  width: 952px;
   height: 370px;
   overflow: hidden;
   margin: 20px auto;
@@ -729,15 +794,32 @@ a:hover p {
   line-height: 55px;
   text-align: right;
   padding: 0 20px;
+  font-size: 14px;
 }
 .document {
   margin-bottom: 45px;
 }
-.document .document-content p {
+.document-content {
   font-size: 16px;
-  text-indent: 32px;
-  line-height: 30px;
   padding: 0 20px;
+  line-height: 30px;
+}
+.document-content p {
+  text-indent: 32px;
+}
+.document-content ul {
+  margin-left: 60px;
+}
+.document-content table {
+  border: 1px solid #666;
+  border-collapse: collapse;
+}
+.document-content table td {
+  border: 1px solid #666;
+}
+.document-content table p {
+  text-indent: inherit;
+  padding: 0;
 }
 /****video*****/
 .video {
@@ -822,13 +904,13 @@ a:hover p {
 .project {
   padding: 25px 0;
 }
-.title span {
+.title .title-text {
   position: relative;
   padding-right: 5px;
   margin-right: 5px;
   border-right: 1px solid #cbcbcb;
 }
-.title span:after {
+.title .title-text:after {
   content: "";
   position: absolute;
   display: block;
