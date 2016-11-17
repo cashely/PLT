@@ -82,7 +82,7 @@
 						<?php if ( has_post_thumbnail() ) { ?>
 						<?php the_post_thumbnail('notice'); ?>
 						<?php } else {?>
-						<img src="图片地址" alt="替代文本" />
+						<img src="<?php bloginfo('template_url'); ?>/images/new_nnotice.jpg" alt="替代文本" />
 						<?php } ?>
 	                    <a href="<?php the_permalink(); ?>" class="md-content-list">
 	                        <span class="list-title"><span>最新</span><?php echo wp_trim_words(get_the_title(),15); ?></span>
@@ -109,7 +109,7 @@
 			                    	<?php if ( has_post_thumbnail() ) { ?>
 									<?php the_post_thumbnail('indexTrain'); ?>
 									<?php } else {?>
-									<img class="lf" src="<?php bloginfo('template_url'); ?>/images/project01.jpg" alt="">
+									<img class="lf" src="<?php bloginfo('template_url');?>/images/project01.jpg" alt="">
 									<?php } ?>
 		                            <p><?php the_title(); ?></p>
 		                        </a>
