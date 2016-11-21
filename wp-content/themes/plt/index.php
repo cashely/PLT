@@ -5,9 +5,9 @@
 <div class="banner">
     <!-- Jssor Slider Begin -->
     <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto;
-        top: 0; left: 0; width: 1300px; height: 316px; overflow: hidden;">
+        top: 0; left: 0; width: 1400px; height: 316px; overflow: hidden;">
         <!-- Slides Container -->
-        <div u="slides" style="cursor: move; position: absolute; left: 0; top: 0; width: 1300px; height: 316px; overflow: hidden;">
+        <div u="slides" style="cursor: move; position: absolute; left: 0; top: 0; width: 1400px; height: 316px; overflow: hidden;">
             <div>
                 <img u="image" src="<?php bloginfo('template_url'); ?>/images/banner.jpg" />
             </div>

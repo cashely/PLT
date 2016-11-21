@@ -184,7 +184,10 @@ a:hover p {
 .header .nav #menu-menu-1 li:first-child {
   margin-left: 15px;
 }
-.header .nav .current-menu-item a {
+.header .nav .current-menu-item a,
+.header .nav .current-post-parent a,
+.header .nav .current-menu-parent a,
+.header .nav .current-post-ancestor a {
   color: #fff;
   background: #c40808;
   border-bottom: 6px solid #eec8c8;
