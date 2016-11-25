@@ -90,7 +90,6 @@ a:hover p {
 }
 .md-content-list {
   display: block;
-  cursor: pointer;
   position: relative;
 }
 .md-content-list a {
