@@ -125,10 +125,10 @@
                 </h3>
                 <div  class="md-content">
                     <div class="row-list mg-top">
-                    	<?php query_posts('showposts=4&cat=3'); ?>
+                    	<?php query_posts('showposts=4&cat=18'); ?>
 		                	<?php while (have_posts()) : the_post(); ?>
 		                		<h4><?php the_time('Y年m月d日') ?></h4>
-			                    <a href="<?php the_permalink(); ?>">
+			                    <a href="<?php bloginfo('url'); ?>/regist">
 			                    	<i>></i>
 		                            <?php the_title(); ?>
 		                        </a>
