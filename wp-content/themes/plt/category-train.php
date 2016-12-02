@@ -25,52 +25,6 @@
        </div>
        <!-- Jssor Slider End -->
    </div>
-   <script src="//cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jssor.slider.mini.js"></script>
-   <script>
-       jQuery(document).ready(function ($) {
-
-           var options = {
-               $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
-               $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
-               $Idle: 4000,                                        //时间间隔
-               $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
-
-               $ArrowKeyNavigation: true,                          //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
-               $SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
-               $SlideDuration: 800,                               //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
-               $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
-
-               $BulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not
-                   $Class: $JssorBulletNavigator$,                  //[Required] Class to create navigator instance
-                   $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
-                   $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
-                   $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
-                   $Rows: 1,                                       //[Optional] Specify lanes to arrange items, default value is 1
-                   $SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
-                   $SpacingY: 8,                                   //[Optional] Vertical space between each item in pixel, default value is 0
-                   $Orientation: 1,                                //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
-                   $Scale: false                                   //Scales bullets navigator or not while slider scale
-               }
-           };
-
-           var jssor_slider1 = new $JssorSlider$("slider1_container", options);
-           //responsive code begin
-           function ScaleSlider() {
-               var bodyWidth = document.body.clientWidth;
-               if (bodyWidth)
-                   jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 1920));
-               else
-                   window.setTimeout(ScaleSlider, 30);
-           }
-           ScaleSlider();
-
-           $(window).bind("load", ScaleSlider);
-           $(window).bind("resize", ScaleSlider);
-           $(window).bind("orientationchange", ScaleSlider);
-           //responsive code end
-       });
-   </script>
 <!--content -->
     <div class="content project">
            <div class="project-drug">
@@ -98,7 +52,7 @@
                    <div class="img">
                        <!-- Jssor Slider Begin -->
                        <div style=" width: 446px;margin: 0 auto">
-                       <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto;
+                       <div id="slider2_container" style="visibility: hidden; position: relative; margin: 0 auto;
                top: 0; left: 0; width: 446px; height: 297px; overflow: hidden;">
                            <!-- Slides Container -->
                            <div u="slides" style="cursor: move; position: absolute; left: 0; top: 0; width: 446px; height: 297px; overflow: hidden;">
@@ -200,6 +154,7 @@
                    };
 
                    var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+                   var jssor_slider1 = new $JssorSlider$("slider2_container", options);
 
                    //responsive code begin
                    //you can remove responsive code if you don't want the slider scales while window resizing
@@ -219,7 +174,6 @@
                    //responsive code end
                });
            </script>
-
 <?php
 	get_footer();
 ?>
